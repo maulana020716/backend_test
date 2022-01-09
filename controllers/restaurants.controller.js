@@ -25,6 +25,7 @@ export default class RestaurantsController {
 			});
 
 		let response = {
+			username: req.user.displayName,
 			restaurants: restaurantsList,
 			page: page,
 			filters: filters,
@@ -32,6 +33,7 @@ export default class RestaurantsController {
 			total_results: totalNumRestaurants,
 		};
 		res.render("allRestaurants", { data: response });
+		console.log(req.user);
 		// res.json(response);
 	}
 

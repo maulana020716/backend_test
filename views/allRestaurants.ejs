@@ -13,10 +13,17 @@
 
 <body>
     <div class="container">
-        <h1 class="mt-5">
-            Restaurant Lists
-        </h1>
+        <div>
+            <h1 class="mt-5">
+                Restaurant Lists
+            </h1>
+            <a href="/logout" class="btn btn-sm btn-success" style="float: right;">Logout</a>
+        </div>
         <a href="restaurants/form" class="btn btn-primary my-5">Add Restaurants</a>
+        <a href="crypto/form" class="btn btn-primary my-5">Go to encrypt page</a>
+        <h3 class="mt-5">
+            Hello mr <%= data.username %>
+        </h3>
         <table class="table">
             <thead>
                 <tr>
